@@ -1,0 +1,57 @@
+.logo {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-size: 2em;
+  background: linear-gradient(
+    330deg,
+    #e05252 0%,
+    #99e052 25%,
+    #52e0e0 50%,
+    #9952e0 75%,
+    #e05252 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.load-animation {
+  animation: 2s ease-out 0s 1 FadeIn;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-image {
+  transition: all 0.5s;
+  -webkit-transition: all 0.25s;
+}
+
+.coming-soon{
+  background: linear-gradient(
+    to right, 
+    hsl(98 100% 62%), 
+    hsl(204 100% 59%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  animation: 1s tilted forwards ease-in-out infinite;
+}
+
+@keyframes tilted {
+  0%{
+    transform: rotateX(0deg);
+  }
+  50%{
+    transform: rotateX(90deg);
+  }
+  100%{
+    transform: rotateX(0deg);
+  }
+}
