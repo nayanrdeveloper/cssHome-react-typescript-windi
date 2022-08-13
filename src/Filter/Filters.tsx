@@ -3,7 +3,7 @@ import ComingSoon from '../components/ComingSoon'
 
 export default function Filters() {
   return (
-    <div>
+    <div className='load-animation'>
         <ComingSoon />
     </div>
   )

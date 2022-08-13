@@ -70,9 +70,9 @@ export default function FilterTool() {
         
       })
   return (
-    <div>
-      <div className="flex justify-between">
-        <div className="flex flex-col gap-2">
+    <div className="p-2 text-gray-600 load-animation">
+      <div className="flex flex-wrap justify-between">
+        <div className="flex flex-col gap-2 md:ml-10">
           <div className="flex justify-between">
             <label htmlFor="blur">Blur: </label>
             <input
@@ -226,8 +226,8 @@ export default function FilterTool() {
             />
           </div>
         </div>
-        <div>
-            <img className="w-96 h-96" src={cssLogo} style={{ filter: filterProperty }}></img>
+        <div className="mr-10 mt-4">
+            <img className="w-96 md:h-96" src={cssLogo} style={{ filter: filterProperty }}></img>
         </div>
       </div>
       <div className="border mt-3 w-full h-h-20">{fullFilterProperty ? fullFilterProperty: ''}</div>

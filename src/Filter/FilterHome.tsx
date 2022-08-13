@@ -1,5 +1,6 @@
 import React from 'react'
-import textShadow1Image from "../assets/shadow.png";
+import filterToolImage from "../assets/filter_tool.png";
+import filterImage from "../assets/filters.png";
 import HeroSection from "../components/HeroSection";
 
 export default function FilterHome() {
@@ -12,13 +13,13 @@ export default function FilterHome() {
       const toolList: toolListObj[] = [
         {
           name: "Filters",
-          image: textShadow1Image,
+          image: filterImage,
           to: "/filters",
           description: "Different Styles of Filters",
         },
         {
           name: "Filter Generator",
-          image: textShadow1Image,
+          image: filterToolImage,
           to: "/filter-generator",
           description: "Generate different types of Filters",
         },

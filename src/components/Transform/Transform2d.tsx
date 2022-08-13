@@ -46,8 +46,8 @@ export default function Transform2d() {
     console.log(transformProperty);
   });
   return (
-    <div>
-      <div className="flex justify-around">
+    <div className="load-animation">
+      <div className="flex flex-wrap justify-around">
         <div className="flex flex-col gap-3">
           <div className="flex gap-2 justify-between">
             <label htmlFor="translate-x" className="text-gray-600">
@@ -171,16 +171,16 @@ export default function Transform2d() {
             />
           </div>
         </div>
-        <div>
-          <div className="border w-96 h-96 justify-center">
+        <div className="mt-3">
+          <div className="border w-44 h-44 md:w-96 md:h-96 justify-center">
             <div
-              className="border w-48 h-48 mx-auto mt-24 bg-red-500"
+              className="border w-20 h-20 md:w-48 md:h-48 mx-auto mt-13 md:mt-24 bg-red-500"
               style={{ transform: transformProperty }}
             ></div>
           </div>
         </div>
       </div>
-      <div className="border mt-3 w-full h-h-20">{fullTransformProperty}</div>
+      <div className="border mt-3 w-full h-h-20 text-gray-600">{fullTransformProperty}</div>
       <button
         className="border w-30 h-12 bg-green-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-green-600 focus:outline-none focus:shadow-outline"
         onClick={onClickCopyHandler}

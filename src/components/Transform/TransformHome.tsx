@@ -1,5 +1,7 @@
 import React from 'react'
-import textShadow1Image from "../../assets/textShadow1.png";
+import transformsImage from "../../assets/tranforms.png";
+import threeDTransformImage from "../../assets/3d_transforms.png";
+import transformTool2dImage from "../../assets/transformation_tool_2d.png";
 import HeroSection from "../HeroSection";
 
 export default function TransformHome() {
@@ -12,19 +14,19 @@ export default function TransformHome() {
       const toolList: toolListObj[] = [
         {
           name: "Transforms",
-          image: textShadow1Image,
+          image: transformsImage,
           to: "/transforms",
           description: "Different Styles of Transforms",
         },
         {
           name: "2D Transform",
-          image: textShadow1Image,
+          image: transformTool2dImage,
           to: "/transforms-2d",
           description: "Generate 2D Transform",
         },
         {
             name: "3D Transform",
-            image: textShadow1Image,
+            image: threeDTransformImage,
             to: "/transforms-3d",
             description: "Generate 3D Transform",
         },

@@ -7,6 +7,8 @@ import mainBorderImage from "../../assets/mainBorder.png";
 import mainTextImage from "../../assets/textMain.png";
 import mainTextShadowImage from "../../assets/mainTextShadow.png";
 import mainOutlineImage from "../../assets/mainOutline.png";
+import mainFilterImage from "../../assets/main_filter.png";
+import mainTransformationImage from "../../assets/main_transformation.png";
 import shadowImage3 from "../../assets/empty.png";
 import SidebarItem from "./SidebarItem";
 import { Routes, Route } from "react-router-dom";
@@ -59,8 +61,8 @@ function Sidebar() {
       image: mainTextShadowImage,
       to: "/text-shadow-home",
     },
-    { name: "Transform", image: mainOutlineImage, to: "/transform-home" },
-    { name: "Filter", image: mainOutlineImage, to: "/filter-home" },
+    { name: "Transform", image: mainTransformationImage, to: "/transform-home" },
+    { name: "Filter", image: mainFilterImage, to: "/filter-home" },
 
 
   ];
@@ -106,12 +108,12 @@ function Sidebar() {
                 element={<AdvanceBorderTool />}
               />
 
-              <Route element={<PrivateComponent />}>
+              {/* <Route element={<PrivateComponent />}> */}
                 <Route path="/text-home" element={<TextHome />} />
                 <Route path="/text" element={<Texts />} />
                 <Route path="/text-tool" element={<TextTool />} />
                 <Route path="/text-spacing" element={<TextSpacing />} />
-              </Route>
+              {/* </Route> */}
 
               <Route path="/outline-home" element={<OutlineHome />} />
               <Route path="/outlines" element={<Outlines />} />
@@ -129,10 +131,10 @@ function Sidebar() {
               <Route path="/filter-generator" element={<FilterTool />} />
               <Route path="/filters" element={<Filters />} />
               
-              <Route path="/admin-login" element={<AdminLogin />} />
-              <Route element={<AdminComponent />}>
-                <Route path="/admin-dashboard" element={<AdminHome />} />
-              </Route>
+              {/* <Route path="/admin-login" element={<AdminLogin />} /> */}
+              {/* <Route element={<AdminComponent />}> */}
+                {/* <Route path="/admin-dashboard" element={<AdminHome />} /> */}
+              {/* </Route> */}
             </Routes>
           </div>
         </div>
