@@ -44,6 +44,7 @@ import Transforms from "../Transform/Transforms";
 import FilterHome from "../../Filter/FilterHome";
 import FilterTool from "../../Filter/FilterTool";
 import Filters from "../../Filter/Filters";
+import ContactUs from "../ContactUs";
 
 function Sidebar() {
   interface menuItemObj {
@@ -130,6 +131,8 @@ function Sidebar() {
               <Route path="/filter-home" element={<FilterHome />} />
               <Route path="/filter-generator" element={<FilterTool />} />
               <Route path="/filters" element={<Filters />} />
+
+              <Route path="/contact-us" element={<ContactUs />} />
               
               {/* <Route path="/admin-login" element={<AdminLogin />} /> */}
               {/* <Route element={<AdminComponent />}> */}

@@ -63,9 +63,11 @@ function Navbar() {
         </ul>
       </div>
       <div className="md:flex gap-2">
+        <Link to="/contact-us">
         <button className="p-2 rounded-md text-gray-500 hover:(shadow-md text-gray-700)">
           Contact Us
         </button>
+        </Link>
         <p className="p-2 text-gray-500">
           {StoreData.getLoginUser ? `Hello ${StoreData.getLoginUser}` : ""}
         </p>
